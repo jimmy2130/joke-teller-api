@@ -1,1 +1,1 @@
-node fetchData.js
+web: node fetchData.js
