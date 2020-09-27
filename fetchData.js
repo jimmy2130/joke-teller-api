@@ -9,12 +9,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // define the first route
+// https://www.freecodecamp.org/news/how-to-deploy-your-site-using-express-and-heroku/
 app.get("/", function (req, res) {
   res.send("<h1>Hello World!</h1>")
 })
  
 app.post('/', function(req, res){
-    // res.send('Hello World!');
   tts.speech({
       key: process.env.API_KEY,
       hl: 'en-us',
